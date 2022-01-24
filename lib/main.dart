@@ -47,14 +47,32 @@ class _LoginState extends State<Login> {
                   child: Column(
                     children: [
                       Image.asset('pues alguno'),
-                      Text('Algun texto guapo debajo del logo')
+                      Text('Algun texto guapo debajo del logo'),
+                      Text('Otro texto por aqui.')
                     ],
                   ),
                 ),
                 Container(
                   child: Column(
                     children: [
-                      
+                      ElevatedButton(
+                        onPressed: null,
+                        child: Row(
+                          children: [
+                            Image.asset('pos el logo de f'),
+                            Text('facebook')
+                          ],
+                        )
+                      ),
+                      ElevatedButton(
+                        onPressed: null,
+                        child: Row(
+                          children: [
+                            Image.asset('pos el logo de g'),
+                            Text('google')
+                          ],
+                        )
+                      )
                     ],
                   ),
                 )
