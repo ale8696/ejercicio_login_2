@@ -42,39 +42,52 @@ class _LoginState extends State<Login> {
               )
             ),
             Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
                   child: Column(
+                    mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      Image.asset('pues alguno'),
+                      Image.asset('assets/images/redbull_logo.png'),
                       Text('Algun texto guapo debajo del logo'),
                       Text('Otro texto por aqui.')
                     ],
                   ),
                 ),
-                Container(
-                  child: Column(
-                    children: [
-                      ElevatedButton(
-                        onPressed: null,
-                        child: Row(
-                          children: [
-                            Image.asset('pos el logo de f'),
-                            Text('facebook')
-                          ],
-                        )
+                Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.blue
                       ),
-                      ElevatedButton(
-                        onPressed: null,
-                        child: Row(
-                          children: [
-                            Image.asset('pos el logo de g'),
-                            Text('google')
-                          ],
-                        )
+                      onPressed: null,
+                      child: Row(
+                        children: [
+                          Image.asset(
+                            'assets/images/facebook_icon.png',
+                            width: 30
+                          ),
+                          Text('Facebook')
+                        ],
                       )
-                    ],
-                  ),
+                    ),
+                    ElevatedButton(
+                      style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all(Colors.white)
+                      ),
+                      onPressed: null,
+                      child: Row(
+                        children: [
+                          Image.asset(
+                            'assets/images/google_icon.png',
+                            width: 30
+                          ),
+                          Text('Google')
+                        ],
+                      )
+                    )
+                  ],
                 )
               ],
             )
